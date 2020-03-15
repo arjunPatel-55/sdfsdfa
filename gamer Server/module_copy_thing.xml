@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="module_copy_thing" default="compile.module.copy_thing">
+  <dirname property="module.copy_thing.basedir" file="${ant.file.module_copy_thing}"/>
+  
+  <property name="module.jdk.home.copy_thing" value="${project.jdk.home}"/>
+  <property name="module.jdk.bin.copy_thing" value="${project.jdk.bin}"/>
+  <property name="module.jdk.classpath.copy_thing" value="${project.jdk.classpath}"/>
+  
+  <property name="compiler.args.copy_thing" value="-encoding UTF-8 -source 8 -target 8 ${compiler.args}"/>
+  
+  <property name="copy_thing.output.dir" value="${module.copy_thing.basedir}/out/production/copy_thing"/>
+  <property name="copy_thing.testoutput.dir" value="${module.copy_thing.basedir}/out/test/copy_thing"/>
+  
+  <path id="copy_thing.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="copy_thing.module.production.classpath">
+    <path refid="${module.jdk.classpath.copy_thing}"/>
+  </path>
+  
+  <path id="copy_thing.runtime.production.module.classpath">
+    <pathelement location="${copy_thing.output.dir}"/>
+  </path>
+  
+  <path id="copy_thing.module.classpath">
+    <path refid="${module.jdk.classpath.copy_thing}"/>
+    <pathelement location="${copy_thing.output.dir}"/>
+  </path>
+  
+  <path id="copy_thing.runtime.module.classpath">
+    <pathelement location="${copy_thing.testoutput.dir}"/>
+    <pathelement location="${copy_thing.output.dir}"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.copy_thing">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.copy_thing">
+    <patternset refid="excluded.from.module.copy_thing"/>
+  </patternset>
+  
+  <path id="copy_thing.module.sourcepath">
+    <dirset dir="${module.copy_thing.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.copy_thing" depends="compile.module.copy_thing.production,compile.module.copy_thing.tests" description="Compile module copy_thing"/>
+  
+  <target name="compile.module.copy_thing.production" depends="register.custom.compilers" description="Compile module copy_thing; production classes">
+    <mkdir dir="${copy_thing.output.dir}"/>
+    <javac2 destdir="${copy_thing.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true" executable="${module.jdk.bin.copy_thing}/javac">
+      <compilerarg line="${compiler.args.copy_thing}"/>
+      <bootclasspath refid="copy_thing.module.bootclasspath"/>
+      <classpath refid="copy_thing.module.production.classpath"/>
+      <src refid="copy_thing.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.copy_thing"/>
+    </javac2>
+    
+    <copy todir="${copy_thing.output.dir}">
+      <fileset dir="${module.copy_thing.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.copy_thing.tests" depends="register.custom.compilers,compile.module.copy_thing.production" description="compile module copy_thing; test classes" unless="skip.tests"/>
+  
+  <target name="clean.module.copy_thing" description="cleanup module">
+    <delete dir="${copy_thing.output.dir}"/>
+    <delete dir="${copy_thing.testoutput.dir}"/>
+  </target>
+</project>

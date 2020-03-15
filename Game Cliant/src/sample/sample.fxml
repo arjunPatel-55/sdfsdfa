@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.image.ImageView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="611.0" prefWidth="693.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Button layoutX="14.0" layoutY="22.0" mnemonicParsing="false" onAction="#join" text="join" />
+        <Label layoutX="90.0" layoutY="26.0" text="Label" />
+
+        <GridPane alignment="CENTER" gridLinesVisible="true" layoutX="249.0" layoutY="511.0" prefHeight="50.0" prefWidth="279.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+            </rowConstraints>
+            <children>
+                <ImageView fx:id="img1p0" fitHeight="50.0" fitWidth="40.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="0" />
+                <ImageView fx:id="img1p1" fitHeight="50.0" fitWidth="40.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                <ImageView fx:id="img1p2" fitHeight="50.0" fitWidth="40.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+                <ImageView fx:id="img1p3" fitHeight="50.0" fitWidth="40.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+                <ImageView fx:id="img1p4" fitHeight="50.0" fitWidth="40.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+                <ImageView fx:id="img1p5" fitHeight="50.0" fitWidth="40.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+                <ImageView fx:id="img1p6" fitHeight="50.0" fitWidth="40.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="0" />
+            </children>
+        </GridPane>
+
+        <GridPane alignment="CENTER" gridLinesVisible="true" layoutX="269.0" layoutY="446.0" prefHeight="40.0" prefWidth="224.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints />
+            </rowConstraints>
+            <children>
+                <ImageView fx:id="img1p7" fitHeight="50.0" fitWidth="40.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="0" />
+                <ImageView fx:id="img1p8" fitHeight="50.0" fitWidth="40.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+                <ImageView fx:id="img1p9" fitHeight="50.0" fitWidth="40.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+                <ImageView fx:id="img1p10" fitHeight="50.0" fitWidth="40.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+                <ImageView fx:id="img1p11" fitHeight="50.0" fitWidth="40.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+                <ImageView fx:id="img1p12" fitHeight="50.0" fitWidth="40.0" onMouseClicked="#chooseCard" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+            </children>
+        </GridPane>
+
+        <GridPane alignment="CENTER" gridLinesVisible="true" layoutX="244.0" layoutY="72.0" prefHeight="40.0" prefWidth="290.0">
+         <children>
+            <ImageView fx:id="img2p0" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="0" />
+            <ImageView fx:id="img2p1" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <ImageView fx:id="img2p2" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+            <ImageView fx:id="img2p3" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+            <ImageView fx:id="img2p4" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+            <ImageView fx:id="img2p5" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+            <ImageView fx:id="img2p6" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="0" />
+         </children>
+         <columnConstraints>
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+
+    <GridPane alignment="CENTER" gridLinesVisible="true" layoutX="265.0" layoutY="132.0" prefHeight="59.0" prefWidth="248.0">
+         <children>
+            <ImageView fx:id="img2p7" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="0" />
+            <ImageView fx:id="img2p8" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <ImageView fx:id="img2p9" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+            <ImageView fx:id="img2p10" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+            <ImageView fx:id="img2p11" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+            <ImageView fx:id="img2p12" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+         </children>
+         <columnConstraints>
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+
+        <GridPane alignment="CENTER" gridLinesVisible="true" layoutX="20.0" layoutY="293.0" prefHeight="0.0" prefWidth="217.0" rotate="270.0">
+         <children>
+            <ImageView fx:id="img3p0" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="0" />
+            <ImageView fx:id="img3p1" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <ImageView fx:id="img3p2" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+            <ImageView fx:id="img3p3" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+            <ImageView fx:id="img3p4" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+            <ImageView fx:id="img3p5" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+            <ImageView fx:id="img3p6" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="0" />
+         </children>
+         <columnConstraints>
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+
+        <GridPane alignment="CENTER" gridLinesVisible="true" layoutX="104.0" layoutY="293.0" prefHeight="0.0" prefWidth="186.0" rotate="270.0">
+         <children>
+            <ImageView fx:id="img3p7" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="0" />
+            <ImageView fx:id="img3p8" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <ImageView fx:id="img3p9" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+            <ImageView fx:id="img3p10" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+            <ImageView fx:id="img3p11" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+            <ImageView fx:id="img3p12" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+         </children>
+         <columnConstraints>
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+
+        <GridPane alignment="CENTER" gridLinesVisible="true" layoutX="472.0" layoutY="292.0" prefHeight="40.0" prefWidth="224.0" rotate="90.0">
+         <children>
+            <ImageView fx:id="img4p0" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="0" />
+            <ImageView fx:id="img4p1" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <ImageView fx:id="img4p2" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+            <ImageView fx:id="img4p3" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+            <ImageView fx:id="img4p4" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+            <ImageView fx:id="img4p5" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+            <ImageView fx:id="img4p6" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="6" GridPane.rowIndex="0" />
+         </children>
+         <columnConstraints>
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+
+
+        <GridPane alignment="CENTER" gridLinesVisible="true" layoutX="428.0" layoutY="292.0" prefHeight="0.0" prefWidth="170.0" rotate="90.0">
+         <children>
+            <ImageView fx:id="img4p7" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="0" />
+            <ImageView fx:id="img4p8" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+            <ImageView fx:id="img4p9" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+            <ImageView fx:id="img4p10" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+            <ImageView fx:id="img4p11" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="4" GridPane.rowIndex="0" />
+            <ImageView fx:id="img4p12" fitHeight="50.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="5" GridPane.rowIndex="0" />
+         </children>
+         <columnConstraints>
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+             <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="-Infinity" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+         </rowConstraints>
+      </GridPane>
+
+      <ImageView fx:id="w" fitHeight="50.0" fitWidth="40.0" layoutX="269.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="n" fitHeight="50.0" fitWidth="40.0" layoutX="369.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="e" fitHeight="50.0" fitWidth="40.0" layoutX="469.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="s" fitHeight="50.0" fitWidth="40.0" layoutX="369.0" layoutY="362.0" pickOnBounds="true" preserveRatio="true" />
+
+
+    </children>
+</AnchorPane>
